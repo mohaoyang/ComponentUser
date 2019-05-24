@@ -15,7 +15,8 @@
 		6F6B07772297E446007A7AA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B07762297E446007A7AA7 /* main.m */; };
 		6F6B07812297E446007A7AA7 /* ComponentUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B07802297E446007A7AA7 /* ComponentUserTests.m */; };
 		6F6B078C2297E446007A7AA7 /* ComponentUserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B078B2297E446007A7AA7 /* ComponentUserUITests.m */; };
-		6F6B079B2297E47D007A7AA7 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B079A2297E47D007A7AA7 /* MainView.m */; };
+		6F6B07AA2297FFA5007A7AA7 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B07A82297FFA5007A7AA7 /* MainView.m */; };
+		6F6B07AC2297FFBD007A7AA7 /* ComponentUser.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6F6B07AB2297FFBD007A7AA7 /* ComponentUser.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		6F6B07872297E446007A7AA7 /* ComponentUserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentUserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6B078B2297E446007A7AA7 /* ComponentUserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentUserUITests.m; sourceTree = "<group>"; };
 		6F6B078D2297E446007A7AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F6B07992297E47D007A7AA7 /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		6F6B079A2297E47D007A7AA7 /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		6F6B07A82297FFA5007A7AA7 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		6F6B07A92297FFA5007A7AA7 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		6F6B07AB2297FFBD007A7AA7 /* ComponentUser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ComponentUser.podspec; path = ../../ComponentUser.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,8 @@
 		6F6B075B2297E445007A7AA7 = {
 			isa = PBXGroup;
 			children = (
+				6F6B07AB2297FFBD007A7AA7 /* ComponentUser.podspec */,
+				6F6B07A52297FFA5007A7AA7 /* Pod */,
 				6F6B07662297E445007A7AA7 /* ComponentUser */,
 				6F6B077F2297E446007A7AA7 /* ComponentUserTests */,
 				6F6B078A2297E446007A7AA7 /* ComponentUserUITests */,
@@ -104,7 +108,6 @@
 		6F6B07662297E445007A7AA7 /* ComponentUser */ = {
 			isa = PBXGroup;
 			children = (
-				6F6B079C2297E522007A7AA7 /* View */,
 				6F6B07672297E445007A7AA7 /* AppDelegate.h */,
 				6F6B07682297E445007A7AA7 /* AppDelegate.m */,
 				6F6B076A2297E445007A7AA7 /* ViewController.h */,
@@ -136,11 +139,28 @@
 			path = ComponentUserUITests;
 			sourceTree = "<group>";
 		};
-		6F6B079C2297E522007A7AA7 /* View */ = {
+		6F6B07A52297FFA5007A7AA7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6F6B07992297E47D007A7AA7 /* MainView.h */,
-				6F6B079A2297E47D007A7AA7 /* MainView.m */,
+				6F6B07A62297FFA5007A7AA7 /* Classes */,
+			);
+			name = Pod;
+			path = ../../Pod;
+			sourceTree = "<group>";
+		};
+		6F6B07A62297FFA5007A7AA7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6F6B07A72297FFA5007A7AA7 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6F6B07A72297FFA5007A7AA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F6B07A82297FFA5007A7AA7 /* MainView.m */,
+				6F6B07A92297FFA5007A7AA7 /* MainView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +271,7 @@
 				6F6B07742297E446007A7AA7 /* LaunchScreen.storyboard in Resources */,
 				6F6B07712297E446007A7AA7 /* Assets.xcassets in Resources */,
 				6F6B076F2297E445007A7AA7 /* Main.storyboard in Resources */,
+				6F6B07AC2297FFBD007A7AA7 /* ComponentUser.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F6B076C2297E445007A7AA7 /* ViewController.m in Sources */,
-				6F6B079B2297E47D007A7AA7 /* MainView.m in Sources */,
+				6F6B07AA2297FFA5007A7AA7 /* MainView.m in Sources */,
 				6F6B07772297E446007A7AA7 /* main.m in Sources */,
 				6F6B07692297E445007A7AA7 /* AppDelegate.m in Sources */,
 			);

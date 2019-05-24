@@ -13,6 +13,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor redColor];
+        self.frame = CGRectMake(0, 0, 100, 100);
     }
     return self;
 }
